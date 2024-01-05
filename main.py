@@ -65,7 +65,7 @@ def preprocess(input_json: CarData):
 def preprocess_list(car_data_list):
     processed_data = []
     for input_json in car_data_list:
-        preprocess(input_json)
+        processed_data.append(preprocess(input_json))
     return processed_data
 
 
